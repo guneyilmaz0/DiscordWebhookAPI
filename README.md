@@ -12,9 +12,38 @@ This project provides a simple and customizable way to send Discord Webhook mess
 
 ## Installation
 
-1. Include this code in your Nukkit plugin project.
-2. Instantiate the `DiscordWebhook` class with your webhook URL and plugin instance.
-3. Use the fluent API to configure and send messages.
+### Gradle
+
+Add the repository and dependency to your `build.gradle` file:
+
+```gradle
+repositories {
+    mavenCentral()
+    // Add repository if not published to Maven Central
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.guneyilmaz0:DiscordWebhookAPI:VERSION'
+}
+```
+
+### Maven
+
+Add the dependency to your `pom.xml` file:
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+
+<dependency>
+    <groupId>com.github.guneyilmaz0</groupId>
+    <artifactId>DiscordWebhookAPI</artifactId>
+    <version>VERSION</version>
+</dependency>
+```
 
 ## Usage
 
